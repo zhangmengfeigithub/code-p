@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function shape(){};
+			shape.prototype.name='shape';
+			shape.prototype.toString=function(){
+				return this.name;
+			}
+			function TwoDShape(){};
+			TwoDShape.prototype=shape.prototype;
+			TwoDShape.prototype.constructor=TwoDShape;
+			TwoDShape.prototype.name='2dshape';
+			function tringle(side,height){
+				this.side=side;
+				this.heighe=height;
+			}
+			tringle.prototype=TwoDShape.prototype;
+			tringle.prototype.constructor=tringle;
+			tringle.prototype='tringle';
+			tringle.prototype.getArea=function(){
+				return this.side*this.height/2;
+				
+			}
+			var my=new tringle(5,10);
+			console.log(my.getArea());
+		</script>
+		
+	</body>
+</html>

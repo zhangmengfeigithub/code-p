@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title><style type="text/css">
+			body{
+				background:url(img/0.jpg) no-repeat;
+				}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var sele=document.getElementById("sele");
+				sele.onchange=function(){
+					switch(this.value)
+					{
+					case "1":
+					document.body.style.background="url(img/0.jpg)";break;
+					case "2":
+					document.body.style.background="url(img/1.jpg)";break;
+					case "3":
+					document.body.style.background="url(img/2.jpg)";break;}
+				}
+			}
+		</script>
+		
+	</head>
+	<body>
+		<select id="sele">
+			<option value="1">图片1</option>
+			<option value="2">图片2</option>
+			<option value="3">图片3</option>
+		</select>
+	</body>
+</html>

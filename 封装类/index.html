@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				//封装自己的class类名
+				function getclass(classname){
+					if(document.getElementsByClassName)
+					{return document.getElementsByClassName(classname);}
+					var arr=[];
+					var dom=document.getElementsByTagName("*");
+					for(var i=0;i<dom.length;i++)
+					{
+						if (dom[i].classname==classname)
+						{arr.push(dom[i])};
+					}
+					return arr;
+				}
+				getclass("demo");
+			}
+		</script>
+	</head>
+	<body>
+		<div></div>
+		<div class="demo"></div>
+		<div></div>
+		<div></div>
+		<div class="demo"></div>
+		<div></div>
+		<div></div>
+		<div class="demo"></div>
+		<div></div>
+		<div></div>
+				
+	</body>
+</html>

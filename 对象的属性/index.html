@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function Person(username,age,sex,addr){
+				this.username=username;
+				this.age=age;
+				this.sex=sex;
+				this.addr=addr;
+				this.info=function(){
+					return this.username+this.addr;
+				}
+			}
+			var person1=new Person('张孟飞',19,'男','北京');
+			console.log(person1.info());
+			
+		</script>
+		
+	</body>
+</html>

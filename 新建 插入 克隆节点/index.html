@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="demo">
+			
+		</div>
+		<script type="text/javascript">
+			var demo=document.getElementById("demo");
+			var chil=document.createElement("div");
+			demo.appendChild(chil);
+			demo.parentNode.appendChild(demo.cloneNode(true));
+		</script>
+	</body>
+</html>

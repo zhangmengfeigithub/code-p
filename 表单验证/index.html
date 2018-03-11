@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<h1>表单验证的例子</h1>
+		<form method="post">
+		用户名：<input type="text" name="username" id="username"/>用户名只能是字母数值下划线<br/>
+		密码：<input type="password" name="password"  value="password"/>用户名不能为空<br/>
+		邮箱：<input type="submit" name="email" id="email"/>请输入合法邮箱<br />
+		<form method="post">
+		</form>
+		<script type="text/javascript">
+			function check(){
+				var username=document.getElementById("username").value;
+				if(!/^[a-zA-Z0-9_]+$/.test.(username)){
+					alert("用户名不合法");
+					return false;
+				}
+			}
+		</script>
+		
+	</body>
+</html>

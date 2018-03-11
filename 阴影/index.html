@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表单</title>
+	</head>
+	<body>
+		<form action="http://www.baidu.com" method="post" autocomplete="on">
+			账号：
+			<input type="text" value="zhanghao">
+			密码：
+			<input type="password" name="mima">
+			<input type="submit" value="提交">
+			<input type="reset" value="重置">
+			<input type="file"><br/>
+			请输入您的邮箱：<input type="email" name="formmail"></br>
+			请输入个人网址：<input type="url" name="user"></br>
+			请输入电话号码：<input type="tel" name="telphone"><br/>
+			请输入搜索关键词：<input type="search" name="searchinfo"><br/>
+			请选取一种颜色：<input type="color" name="color1"><br />
+			<input type="number" name="number1" value=1 min="1" max="10" step="2">
+			<input type="submit" value="提交">
+			<input type="reset" value="重置">
+			<input type="file">
+			<select>
+				<optgroup label="北京">
+					<option>东城区</option>
+					<option>洗城区</option>
+					<option>按城区</option>
+					<option>被城区</option>
+				</optgroup>
+				<optgroup label="上海">
+					<option>东城区</option>
+					<option>东城区</option>
+					<option>东城区</option>
+					<option>东城区</option>
+				</optgroup>
+			</select></br>
+			<input type="text"  list="namelist"/>
+			<detalist id="namelist">
+				<option>北京</option>
+				<option>上海</option>
+				<option>南京</option>
+			</detalist>
+		</form>
+	</body>
+</html>
+

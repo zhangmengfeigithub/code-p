@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		function product(name,color){
+			this.name=name;
+			this.color=color;
+			this.whatAreYou=function(){
+				return 'this is a'+''+this.color+this.name;
+			}
+		}
+		product.prototype.price=6888;
+		product.prototype.rating=3;
+		product.prototype.getInfo=function(){
+			return '等级'+this.rating+'价钱'+this.price;
+		}
+		product.prototype={
+			price:6888,
+			memory:64,
+			getInfo:function(){
+				return '内存'+this.memory+'价钱'+this.price;
+			}
+		}
+		var p1=new product('iphone6','玫瑰金');
+		console.log(p1.name);
+		console.log(p1.color);
+		console.log(p1.whatAreYou());
+		
+		
+		</script>
+	</body>
+</html>
